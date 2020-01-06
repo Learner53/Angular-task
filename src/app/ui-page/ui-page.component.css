@@ -1,0 +1,10 @@
+#map {
+    height: 500px;
+    width: 100%;
+   }
+select {
+    width: 200px;
+}
+option {
+    color: black;
+}

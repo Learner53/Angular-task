@@ -1,0 +1,17 @@
+<div class="container-fluid">
+
+    <select (change)="somethingChanged($event)"  class="selectpicker dropdown" id="type" data-live-search="true" name="selectState">
+        <option *ngFor="let test of apiData"  [value]="test.State">{{test.State}}
+            <p *ngIf="selectStatus" [innerHTML]="test.City" id="cityState"></p> 
+        </option>
+     </select>{{ testValue }}
+    <div class="row">
+        <div class="col-md-12 col-lg-6">
+            <p id="showCity"></p>
+        </div>
+        <div class="col-md-12 col-lg-6">
+            <!-- <div #mapContainer id="map"></div> -->
+        </div>
+    </div>
+</div>
+
